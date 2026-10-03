@@ -1,12 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="0; url=./by-gameks/">
-<title>BY GAMEKS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BY GAMEKS - Games, low-spec games, new releases, Windows games, emulators and software.">
+<title>BY GAMEKS — Game Download Hub</title>
+<style>
+:root{--bg:#080b12;--panel:#101621;--panel2:#151d2b;--text:#f4f7fb;--muted:#9ca8ba;--accent:#7c5cff;--accent2:#19d3ae;--border:#263043}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 80% -10%,#24145e 0,transparent 35%),var(--bg);color:var(--text)}
+a{text-decoration:none;color:inherit}.top{background:#06080d;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20}
+.nav{max-width:1200px;margin:auto;padding:16px 22px;display:flex;align-items:center;gap:22px}.brand{font-size:23px;font-weight:900;letter-spacing:.8px;margin-right:auto}.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:7px;flex-wrap:wrap}.navlinks a{padding:9px 11px;color:#cbd3df;border-radius:9px;font-size:13px;font-weight:700}.navlinks a:hover{background:var(--panel2);color:white}
+.hero{max-width:1200px;margin:0 auto;padding:78px 22px 50px}.badge{display:inline-block;padding:7px 12px;border:1px solid #3a306a;background:#17112d;border-radius:999px;color:#bcaeff;font-size:12px;font-weight:800}.hero h1{font-size:clamp(42px,7vw,76px);line-height:.98;margin:18px 0 16px;max-width:850px}.hero h1 span{color:var(--accent)}.hero p{max-width:650px;color:var(--muted);font-size:17px;line-height:1.7}.actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}.btn{padding:13px 18px;border-radius:11px;font-weight:800;background:var(--accent);color:white}.btn.secondary{background:var(--panel2);border:1px solid var(--border)}
+.wrap{max-width:1200px;margin:auto;padding:0 22px 70px}.tools{display:flex;gap:12px;margin-bottom:28px;flex-wrap:wrap}.search{flex:1;min-width:240px;background:var(--panel);border:1px solid var(--border);color:white;padding:14px 16px;border-radius:11px;outline:none}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{background:var(--panel);border:1px solid var(--border);color:#cbd3df;padding:11px 13px;border-radius:10px;cursor:pointer;font-weight:700}.filter.active,.filter:hover{background:#201a43;border-color:#5f4ab2;color:white}
+.section-title{display:flex;align-items:end;justify-content:space-between;margin:36px 0 16px}.section-title h2{margin:0;font-size:27px}.section-title p{margin:0;color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px}.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#4e3c9a;box-shadow:0 16px 40px #0007}.cover{height:145px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#21134d,#0d3540);font-size:42px}.cardbody{padding:16px}.tag{display:inline-block;color:#b9adff;background:#211a40;border-radius:999px;padding:5px 8px;font-size:10px;font-weight:900;text-transform:uppercase}.card h3{margin:10px 0 7px}.card p{color:var(--muted);font-size:13px;line-height:1.5;min-height:39px}.download{display:block;text-align:center;background:var(--accent2);color:#06120f;padding:11px;border-radius:9px;font-weight:900;margin-top:13px}.empty{display:none;padding:35px;text-align:center;color:var(--muted);border:1px dashed var(--border);border-radius:15px}
+.info{margin-top:45px;padding:22px;background:var(--panel);border:1px solid var(--border);border-radius:15px;color:var(--muted);line-height:1.7;font-size:13px}
+footer{border-top:1px solid var(--border);padding:28px 22px;color:var(--muted);text-align:center;font-size:12px}
+@media(max-width:800px){.nav{align-items:flex-start;flex-direction:column}.brand{margin-right:0}.navlinks{width:100%}.hero{padding-top:48px}.hero h1{font-size:48px}}
+</style>
 </head>
 <body>
-<p>Opening <a href="./by-gameks/">BY GAMEKS</a>…</p>
-</body>
-</html>
+<header class="top"><nav class="nav">
+<a class="brand" href="#home">BY <span>GAMEKS</span></a>
+<div class="navlinks">
+<a href="#home">HOME</a><a href="#lowspecs">LOWSPECS</a><a href="#new">NEW RELEASES</a><a href="#windows">WINDOWS GAMES</a><a href="#playstation">PLAYSTATION EMU</a><a href="#xbox">XBOX EMU</a><a href="#software">SOFTWARES</a>
+</div></nav></header>
+<main id="home">
+<section class="hero"><span class="badge">🎮 GAME DOWNLOAD HUB</span><h1>PLAY MORE.<br><span>DOWNLOAD MORE.</span></h1><p>Welcome to BY GAMEKS — your organized hub for games, low-spec titles, new releases, emulation resources and software.</p><div class="actions"><a class="btn" href="#new">Browse Games</a><a class="btn secondary" href="#windows">Windows Games</a></div></section>
+<div class="wrap">
+<div class="tools"><input id="search" class="search" type="search" placeholder="Search games, software, categories..." aria-label="Search"><div class="filters">
+<button class="filter active" data-filter="all">ALL</button><button class="filter" data-filter="windows">WINDOWS</button><button class="filter" data-filter="lowspecs">LOWSPECS</button><button class="filter" data-filter="playstation">PS EMU</button><button class="filter" data-filter="xbox">XBOX EMU</button><button class="filter" data-filter="software">SOFTWARE</button>
+</div></div>
+<section id="new"><div class="section-title"><h2>🔥 New Releases</h2><p>Replace these with your own legal download links.</p></div><div class="grid" id="gamesGrid"></div><div class="empty" id="empty">No matching titles found.</div></section>
+<section id="lowspecs"><div class="section-title"><h2>⚡ Low Specs</h2><p>Games suitable for modest PCs.</p></div><div class="grid"><article class="card" data-search="low specs game indie"><div class="cover">🕹️</div><div class="cardbody"><span class="tag">Low Specs</span><h3>Low-Spec Game Collection</h3><p>Add your game and requirements here.</p><a class="download" href="#" onclick="return editLink(this)">DOWNLOAD</a></div></article></div></section>
+<section id="windows"><div class="section-title"><h2>🪟 Windows Games</h2><p>PC titles and installers.</p></div><div class="grid"><article class="card" data-search="windows pc game"><div class="cover">🎮</div><div class="cardbody"><span class="tag">Windows</span><h3>Your Windows Game</h3><p>Replace this sample with your own game information.</p><a class="download" href="#" onclick="return editLink(this)">DOWNLOAD</a></div></article></div></section>
+<section id="playstation"><div class="section-title"><h2>🎮 PlayStation EMU</h2><p>Organize emulator resources and legally distributable files.</p></div><div class="grid"><article class="card" data-search="playstation emulator ps emu"><div class="cover">🕹️</div><div class="cardbody"><span class="tag">PS EMU</span><h3>PlayStation Resource</h3><p>Add your permitted emulator/resource link here.</p><a class="download" href="#" onclick="return editLink(this)">OPEN LINK</a></div></article></div></section>
+<section id="xbox"><div class="section-title"><h2>🟩 Xbox EMU</h2><p>Emulation resources and legal downloads.</p></div><div class="grid"><article class="card" data-search="xbox emulator emu"><div class="cover">🟩</div><div class="cardbody"><span class="tag">Xbox EMU</span><h3>Xbox Resource</h3><p>Add your permitted emulator/resource link here.</p><a class="download" href="#" onclick="return editLink(this)">OPEN LINK</a></div></article></div></section>
+<section id="software"><div class="section-title"><h2>🛠️ Software</h2><p>Useful applications and tools.</p></div><div class="grid"><article class="card" data-search="software utility app"><div class="cover">💻</div><div class="cardbody"><span class="tag">Software</span><h3>Your Software</h3><p>Add the software name, version and official/legal download link.</p><a class="download" href="#" onclick="return editLink(this)">DOWNLOAD</a></div></article></div></section>
+<div class="info"><strong>⚠️ Download policy:</strong> Only upload or link to games, software, ROMs, ISOs and other files that you created, own, have permission to distribute, or are legally available for redistribution. For commercial games, link to the publisher/store or another authorized source.</div>
+</div></main>
+<footer>© 2026 BY GAMEKS • Game Download Hub</footer>
+<script>
+const sampleGames=[
+{name:"Your First Game",type:"Windows",desc:"Add your game title, version and requirements.",icon:"🎮",link:"#",cat:"windows"},
+{name:"Low-Spec Starter",type:"Low Specs",desc:"A sample card for low-spec games.",icon:"⚡",link:"#",cat:"lowspecs"},
+{name:"New Release",type:"New Release",desc:"Replace this with your latest legal release.",icon:"🔥",link:"#",cat:"windows"},
+{name:"Software Tool",type:"Software",desc:"Add a utility or application.",icon:"🛠️",link:"#",cat:"software"}];
+const grid=document.getElementById("gamesGrid");
+grid.innerHTML=sampleGames.map(g=>`<article class="card" data-search="${g.name} ${g.type} ${g.desc}" data-cat="${g.cat}"><div class="cover">${g.icon}</div><div class="cardbody"><span class="tag">${g.type}</span><h3>${g.name}</h3><p>${g.desc}</p><a class="download" href="${g.link}">DOWNLOAD</a></div></article>`).join("");
+let active="all";
+function apply(){const q=document.getElementById("search").value.toLowerCase();let count=0;document.querySelectorAll(".card").forEach(c=>{const text=(c.dataset.search||c.innerText).toLowerCase();const cat=c.dataset.cat||"";const okText=text.includes(q);const okCat=active==="all"||cat===active||(active==="windows"&&c.closest("#windows"));c.style.display=okText&&okCat?"block":"none";if(okText&&okCat)count++});document.getElementById("empty").style.display=count?"none":"block"}
+document.getElementById("search").addEventListener("input",apply);
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");active=b.dataset.filter;apply()}));
+function editLink(){alert('Replace href="#" in index.html with your legal download URL.');return false;}
+</script>
+</body></html>
